@@ -1,0 +1,1857 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Les notes d'elle - L'or des invisibles. Recueil de poésie contemporaine.">
+    <title>Les notes d'elle- L'or des invisibles</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Bouton de changement de thème -->
+    <button class="theme-toggle" aria-label="Changer de thème">
+        <span class="theme-icon">☀️</span>
+    </button>
+
+    <!-- Menu hamburger -->
+    <nav role="navigation" aria-label="Menu principal">
+        <button class="menu-toggle" aria-label="Ouvrir le menu" aria-expanded="false">
+            <span class="hamburger-line"></span>
+            <span class="hamburger-line"></span>
+            <span class="hamburger-line"></span>
+        </button>
+
+        <aside class="menu-sidebar">
+            <div class="menu-content">
+                <h2 class="menu-title">Sommaire</h2>
+                
+                <ul class="menu-list">
+                    <li>
+                        <button class="menu-item" data-page="presentation">Présentation</button>
+                    </li>
+                    
+                    <li>
+                        <button class="menu-item menu-expandable">
+                            <span>Partie 1 : Au fils du temps</span>
+                            <span class="arrow">›</span>
+                        </button>
+                        <ul class="submenu">
+                            <li><button class="submenu-item" data-page="intro">1. Intro</button></li>
+                            <li><button class="submenu-item" data-page="rouages">2. Aux rouages de mon âme</button></li>
+                            <li><button class="submenu-item" data-page="fermitas">3. Fermitas venustas</button></li>
+                            <li><button class="submenu-item" data-page="brumes">4. Aux brumes du rivage</button></li>
+                            <li><button class="submenu-item" data-page="noyade">5. Noyade des mirages</button></li>
+                        </ul>
+                    </li>
+                    
+                    <li>
+                        <button class="menu-item menu-expandable">
+                            <span>Partie 2 : Parfois, les grands combats sont invisibles</span>
+                            <span class="arrow">›</span>
+                        </button>
+                        <ul class="submenu">
+                            <li><button class="submenu-item" data-page="enfant">1. Ne tuez pas mon enfant !</button></li>
+                            <li><button class="submenu-item" data-page="sdf1">2. L'sdf du trottoir</button></li>
+                            <li><button class="submenu-item" data-page="innocent">3. Je suis innocent</button></li>
+                            <li><button class="submenu-item" data-page="forage">4. Au forage de mon destin</button></li>
+                            <li><button class="submenu-item" data-page="esclavage">5. Au creux des clivages - l'esclavage</button></li>
+                            <li><button class="submenu-item" data-page="combat">6. J'ai foiré mon combat</button></li>
+                            <li><button class="submenu-item" data-page="sdf2">7. L'sdf du trottoir 2</button></li>
+                            <li><button class="submenu-item" data-page="menage">8. La femme de ménage</button></li>
+                            <li><button class="submenu-item" data-page="legende">9. La légende</button></li>
+                        </ul>
+                    </li>
+                    
+                    <li>
+                        <button class="menu-item menu-expandable">
+                            <span>Partie 3 : Ce qu'on devient</span>
+                            <span class="arrow">›</span>
+                        </button>
+                        <ul class="submenu">
+                            <li><button class="submenu-item" data-page="berceau">1. Un seul berceau</button></li>
+                            <li><button class="submenu-item" data-page="louanges">2. C'est pas les louanges !</button></li>
+                            <li><button class="submenu-item" data-page="belleu">3. Belleu, crois moi</button></li>
+                            <li><button class="submenu-item" data-page="zero">4. Accouche le zéro</button></li>
+                            <li><button class="submenu-item" data-page="merci">5. Merci à l'infini</button></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </aside>
+    </nav>
+
+    <!-- Overlay -->
+    <div class="menu-overlay"></div>
+
+    <!-- Contenu principal -->
+    <main id="main-content">
+        
+        <!-- PAGE COUVERTURE -->
+        <section class="page active" id="page-cover">
+            <div class="cover-container">
+                <!-- Taches décoratives -->
+                <div class="blood-stain stain-1" aria-hidden="true"></div>
+                <div class="blood-stain stain-2" aria-hidden="true"></div>
+                <div class="blood-stain stain-3" aria-hidden="true"></div>
+                <div class="gold-stain stain-4" aria-hidden="true"></div>
+                <div class="gold-stain stain-5" aria-hidden="true"></div>
+                <div class="gold-stain stain-6" aria-hidden="true"></div>
+                
+                <div class="cover-content">
+                    <h1 class="cover-title">
+                        <span class="title-line">Les notes</span>
+                        <span class="title-line">d'elle</span>
+                    </h1>
+                    <p class="cover-subtitle">L'or des invisibles
+                        <br>(poésie contemporaine)
+                    </p>
+                    <div class="cover-decoration" aria-hidden="true">
+                        <div class="decoration-line"></div>
+                        <div class="decoration-dot"></div>
+                        <div class="decoration-line"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- PAGE PRÉSENTATION -->
+        <section class="page" id="page-presentation">
+            <article class="content-wrapper">
+                <header>
+                    <h2 class="page-title">Présentation</h2>
+                </header>
+                <div class="presentation-content">
+                    <p>« Les notes d'elle - l'or des invisibles », se présente comme un recueil de poésie, mais il s'agit avant tout du journal intime du personnage principal, Ilye, issu du roman « Prise d'otage ».
+                         <br>  Cardiologue, elle se retrouve prisonnière d'un hôpital psychiatrique destiné aux riches, après avoir signé un contrat à yeux fermés qui la contraint à y demeurer pour une période déterminée.
+                         <br>  Ce recueil constitue une portion de son journal, soigneusement publié par sa mère, témoin silencieuse de ses pensées, de ses émotions et de sa lutte pour préserver son humanité.</p>
+                </div>
+                <button class="back-button" data-back="cover">← Retour à la couverture</button>
+            </article>
+        </section>
+
+        <!-- PARTIE 1 : AU FILS DU TEMPS -->
+        
+        <section class="page" id="page-intro">
+            <article class="content-wrapper">
+                <header>
+                    <h2 class="page-title">Intro</h2>
+                    <p class="poem-part">Partie 1 : Au fils du temps</p>
+                </header>
+                <div class="poem-content">
+                    <pre class="poem-text">
+                        Le corps en pause,
+                        L’esprit en prose,
+                        L’amour en rose,
+                        Mes roses j’arrose.
+
+                        Je prends mon pinceau joli,
+                        Je peins à l’infini,
+                        L’or des raviolis,
+                        Merci…béni…puni.
+
+                        Je tourne en silence,
+                        Je découvre l’alliance,
+                        Savoureuse cadence,
+                        Munie de prudence.
+
+                        Aux cailloux d’osmose,
+                        Victime d’hypnose,
+                        Pauvre moi, j’ose !
+                        Fallacieuse métamorphose.
+
+                        Je cours dans mon chagrin,
+                        La course du sapin,
+                        Lointain chemin malin,
+                        Ô force du divin !
+
+                        Je crie mes maux
+                        Sans dire un mot,
+                        Je reçois un écho,
+                        Glacial écho d’ego.
+
+                        Le fil, je l’ai tenu,
+                        Héroïne du vécu,
+                        Le temps, je l’ai prévu,
+                        Victoire d’imprévu.
+
+                        La montagne en escalade,
+                        La colline en balade,
+                        J’ai monté sans mascarade
+                        Le ton pur d’un malade.
+
+                        J’ai vu la mort m’attendre,
+                        J’ai tenu à défendre,
+                        Le demain à comprendre,
+                        Aujourd'hui à prendre.
+
+                        Dans l’espoir du savoir,
+                        Se cache mon miroir,
+                        Pour tenter le manoir
+                        De mes yeux noirs.
+
+                        Noirs de fatigue,
+                        Noyés de magique,
+                        Lois d’une logique,
+                        Oui, nostalgique.
+
+                        Pourtant frêle d’âge je suis,
+                        À mes vingt ans je luis,
+                        Juste aujourd'hui,
+                        La petite a vécu la nuit.
+
+                        Je suis un orage fumé,
+                        Une tigresse parfumée,
+                        Aux valeurs aimées,
+                        Aux vers rimés.
+
+                        J’ai porté des fardeaux,
+                        Sans aucun assaut,
+                        J’ai vécu le silence
+                        D’une âme en espérance.
+
+                        J’ai connu les guerres des âmes,
+                        Celles des cœurs qui rament,
+                        Sueur, cerveaux, lames,
+                        Proches, famillames.
+
+                        Guerrière dans l’invisible,
+                        Rien n’est visible,
+                        Je vise l’imprévisible,
+                        Dans une image lisible.
+
+                        Je te laisse deviner
+                        Ce que je devenais,
+                        Après la tempête enfuie,
+                        Après la victoire bâtie.
+
+                        Je te laisse digérer.
+                        Le poids de mes mots,
+                        Je te laisse régénérer,
+                        La puissance des maux.
+
+                        Je suis là pour apprendre,
+                        Pour être jugée,entendre,
+                        Je suis là pour apporter,
+                        Le voyage à porter.
+                    </pre>
+                </div>
+                <button class="back-button" data-back="cover">← Retour</button>
+            </article>
+        </section>
+
+        <section class="page" id="page-rouages">
+            <article class="content-wrapper">
+                <header>
+                    <h2 class="page-title">Aux rouages de mon âme</h2>
+                    <p class="poem-part">Partie 1 : Au fils du temps</p>
+                </header>
+                <div class="poem-content">
+                    <pre class="poem-text">
+                       
+
+                        Mon poème à la bohème,
+                        Le vert que j’aime,
+                        Silence, sens du sixième.
+
+                        Chantons ensemble
+                        Ce qui me semble,
+                        Les pièces je rassemble,
+                        Rougeole humble.
+
+                        Humain en péril,
+                        Amour en exil,
+                        Prix de mille,
+                        Nuits viriles.
+
+                        Le cadre de l’agneau
+                        Poignardé dans le dos,
+                        Fabuleux anneau,
+                        Mystérieux canot.
+
+                        Je perçois les étincelles
+                        D’une rivière sans sel,
+                        Le feu d’un chemin,
+                        Je tends ma main.
+
+                        Je dessine l’espoir,
+                        Assaut aura gloire,
+                        J’écris l’armoire
+                        De mes mots enfouis.
+                        Puis,… J’ai appris l’orage
+                        De mon âme en rouage.
+                        
+                        Aux rouages de mon âme,
+                        Que mon histoire rame,
+                        Aux rouages de mon âme,
+                        Que je me blâme.
+
+                        Vaste comme un astre,
+                        Théorie des cloîtres,
+                        Caste comme un vaste,
+                        Météoride des lasts.
+
+                        Merci de comprendre le cœur en assaut,
+                        Merci de saisir l’ardoise des mots,
+                        Merci de prendre conscience des ruisseaux,
+                        Merci d’entendre le souffle des sauts.
+
+                        Je sais que c’est absurde,
+                        De voir cassure de…
+                        Je sais que c’est bizarre,
+                        D’entendre un blizzard.
+
+                        Pour en arriver là,
+                        J’ai su des blablas,
+                        Pour entendre l’ola,
+                        J’ai reçu des calas.
+
+                        Solide comme un chat,
+                        Mes sept âmes d’Arras,
+                        Poignante des rats,
+                        Des égouts d’aura.
+
+                        Comprendre le passé,
+                        Fil conducteur,
+                        Voir ramasser,
+                        Gilet sauveur.
+
+                        Regards croisés,
+                        Rejet assuré,
+                        Insultes, préjugés,
+                        Cassures mal jugées.
+
+                        Comprends la vérité,
+                        Apprends l’égalité,
+                        Entends la qualité,
+                        Conseille avec rudité.
+
+                        Rude, sois digne,
+                        Cultive les lignes,
+                        Tempêtes passantes,
+                        Ambitions cassantes.
+
+                        Courage, petit guerrier,
+                        Puissant olivier,
+                        Courage, petit cœur,
+                        Garde ta lueur.
+                    </pre>
+                </div>
+                <button class="back-button" data-back="cover">← Retour</button>
+            </article>
+        </section>
+
+        <section class="page" id="page-fermitas">
+            <article class="content-wrapper">
+                <header>
+                    <h2 class="page-title">Fermitas Venustas</h2>
+                    <p class="poem-part">Partie 1 : Au fils du temps</p>
+                </header>
+                <div class="poem-content">
+                    <pre class="poem-text">
+                        
+
+                            Mélancolie en frimas,
+                            Odyssée qu’on entasse,
+                            Fermitas Venustas,
+                            Beauté que le ciel fracasse.
+
+                            Au bord des rives chasse
+                            Les prémices d’Alsace,
+                            Cerises qu’on agace,
+                            Noyau qui se casse.
+
+                            Sculpture azurée,
+                            Divine ajourée,
+                            Au centre des vestiges,
+                            L’abîme des tiges.
+
+                            Prestige historique,
+                            Au champ des chics,
+                            Vestige symbolique,
+                            Au bord du risque.
+
+                            Merveilles aux yeux saveurs,
+                            Richesse aux âmes couleur,
+                            Patrimoine des voyageurs,
+                            Ardeur à la lisière du cœur.
+
+                            Centrée dans le royaume,
+                            Entre petites chaumes,
+                            Lumière arrivée,
+                            Au centre, invitée.
+
+                            Ils demandent la paix ?
+                            Au divin sculpté !
+                            Ils demandent de l’oseille ?
+                            Au frêle de l’or seuil.
+
+                            Incroyable métaphore
+                            Aux yeux du corps,
+                            Errance de l’essence,
+                            Édifiée en réminiscence.
+
+                            Le rempart central,
+                            Veilleur ancestral,
+                            Irradie les lieux
+                            De reflets audacieux.
+
+                            Le triomphe du savoir
+                            S’inscrit sans fard
+                            Dans les lignes croisées
+                            D’un passé révolé.
+
+                            Le souffle des coulisses,
+                            L’audace des abscisses,
+                            Désaxe l’harmonie
+                            D’une antique symétrie.
+
+                            Fermitas se replie,
+                            Venustas s’alourdit,
+                            Dans l’épure glacée
+                            D’un souffle dompté.
+                    </pre>
+                </div>
+                <div class="note-section">
+                    <h3 class="note-title">Note</h3>
+                    <div class="note-content">
+                        <p>
+
+                         Ce poème s’ouvre sur une atmosphère de givre et de vertige.
+                        Une beauté figée, comme prise dans le souffle glacé du temps.<br>
+                        Tout y semble à la fois majestueux et fragile une procession de formes, d’ombres et de lignes aux contours mouvants.
+                        <br> Le titre convoque deux principes hérités de l’architecture classique :Fermitas, la solidité.Venustas, la beauté.Mais ici, ces forces ne sont ni techniques ni figées : elles deviennent humaines, symboliques, presque vivantes.
+                       <br> D’un vers à l’autre, le poème évoque la mémoire d’un monde construit, orné, sculpté et pourtant au bord de l’effondrement.Les vestiges, les abîmes, les rives, les remparts : tout tient encore debout,mais tout vacille sous le poids du savoir, du regard, de l’Histoire.
+                        <br>Dans ce labyrinthe de métaphores,l’esthétique n’est jamais vaine : elle questionne.La beauté est tantôt refuge, tantôt piège.Le savoir, parfois triomphe, parfois fardeau.Et l’harmonie elle-même peut se désaxer sans bruit.
+                        <br>Au seuil final, Fermitas se replie, Venustas s’alourdit.Il ne reste qu’un souffle, dompté, contenu, suspendu.Mais dans ce retrait réside aussi une forme de grâce silencieuse.Une lumière gelée.Un équilibre fragile, mais intact.</p>
+                    </div>
+                </div>
+                <button class="back-button" data-back="cover">← Retour</button>
+            </article>
+        </section>
+
+        <section class="page" id="page-brumes">
+            <article class="content-wrapper">
+                <header>
+                    <h2 class="page-title">Aux brumes du rivage</h2>
+                    <p class="poem-part">Partie 1 : Au fils du temps</p>
+                </header>
+                <div class="poem-content">
+                    <pre class="poem-text">
+                       
+                        
+                        Cycle inlassable,
+                        Sylvestre, cassable,
+                        Aux brumes du rivage,
+                        L’orbe des clivages.
+
+                        Suspendue, murmure,
+                        Astrale alumure,
+                        Vertige des murs,
+                        Navrée clôture.
+
+                        Alizé des tortures,
+                        Chemin des voitures,
+                        Allez‑y, frôlez la paix
+                        Au sépia des épais.
+
+                        Luminaire, liminaire,
+                        Rayonnement des airs,
+                        Abandon au sanctuaire,
+                        Ondoiement amer.
+
+                        Exhaler les voûtes du matin,
+                        Édifier les chemins,
+                        De clarté infinie,
+                        Noblesse à l’infini.
+
+                        Gravité solidaire,
+                        Clarté singulière,
+                        Désir qui s’élève,
+                        Conscience sans trêve.
+
+                        Rompez l’orbite figée,
+                        Fracturez les allées,
+                        Donnez souffle et espace
+                        Aux marches sans trace.
+
+                        Haussez les regards,
+                        Biffez les départs,
+                        Offrez aux absents
+                        Le socle éclatant.
+                    </pre>
+                </div>
+                <div class="note-section">
+                    <h3 class="note-title">Note</h3>
+                    <div class="note-content">
+                        <p>
+                            Ce poème explore les confins d’un monde incertain,où l’on avance à travers les brumes du doute,les rivages du non-dit,et les clivages invisibles qui séparent les êtres, les époques, les regards.
+                           <br> Entre l’effritement hérité et l’élan d’un souffle neuf,le poème laisse entrevoir une issue :non pas une réponse, mais une exigence, celle d’un éveil discret,d’une conscience qui refuse l’automatisme,et qui cherche, malgré les dérives, une direction plus haute.</p>
+                    </div>
+                </div>
+                <button class="back-button" data-back="cover">← Retour</button>
+            </article>
+        </section>
+
+        <section class="page" id="page-noyade">
+            <article class="content-wrapper">
+                <header>
+                    <h2 class="page-title">Noyade des mirages</h2>
+                    <p class="poem-part">Partie 1 : Au fils du temps</p>
+                </header>
+                <div class="poem-content">
+                    <pre class="poem-text">
+                
+                        C’est des clous de savoir,
+                        Des troubles de mémoire,
+                        Mesurable gloire,
+                        Pensée d’un soir.
+
+                        Dans le pays enchanté
+                        Des jardins secrets,
+                        Dans les lointains navrés,
+                        Fermés, sucrés,
+                        
+                        Existe la fontaine
+                        De la reine ancienne,
+                        Merveilleuse, enfouie, humaine,
+                        
+                        Au milieu des plaines.
+                        À l’horizon diapré,
+                        Qui cache l’éthéré,
+                        Émeraude, saphir,L’or s’étire.
+
+                        Légèreté aérienne,
+                        Papillons qui viennent,
+                        Oiseau-mouche qui touche
+                        Le miel de la ruche.
+
+                        Le rouge rougit
+                        Des fruits délicieux,
+                        Le bleu surgit
+                        Des cristaux fabuleux.
+
+                        À la roche du plaisir,
+                        Que les amours du désir
+                        Se tendent la main.
+                        À la roche du plaisir,
+                        Que les amours du désir
+                        Promettent demain.
+
+                        Une danse intemporelle
+                        De la voile irisée,
+                        Un parfum envoûtant
+                        De clarté lactée.
+
+                        Framboise, fraise, myrtille,
+                        Tomate, carotte, lentille,
+                        Symphonie des lucioles,
+                        Abeilles et alvéoles.
+
+                        Saphir doux, vaillant,
+                        Souffle fugace, allant,
+                        Amertume latente du citron,
+                        Mystique, déroutant.
+
+                        À la noyade des mirages
+                        Se cachent les brigades
+                        Des fourmis bosseuses,
+                        Au trône, nombreuses.
+
+                        Je tourne mon regard :
+                        Un chat, à l’égard,
+                        Dans mon rêve entrait,
+                        Très humain irait
+
+                        Nourrir un oiseau,
+                        Blessé, sans bouger.
+                        Pauvre petit oiseau !
+                        Le chat l’a logé.
+
+                        Une histoire presque réelle,
+                        Perçue, vécue.
+                        Une histoire réelle,
+                        Témoignage ému.
+
+                        J’ai compris les animaux,
+                        La loi de l’entraide.
+                        J’ai compris les blessures,
+                        Des noyades des mirages.
+
+                        Au creux des ombres serrées
+                        Se tissent des voix voilées,
+                        Des murs qu’on dit sacrés,
+                        Des murs qu’on a scellés.
+
+                        Sous le masque du soir
+                        Se perdent des regards.
+                        Les hommes, en miroir,
+                        Se taisent, hagards.
+
+                        Les chemins s’opposent,
+                        Les langues s’imposent,
+                        Les peuples implosent
+                        Dans des rêves moroses.
+
+                        Pourtant, au bord du cercle,
+                        Au lieu où l’air s’empresse,
+                        Le silence devient spectre,
+                        Le doute, une adresse.
+
+                        Ce n’est plus l’animal qu’on craint,
+                        Ce n’est plus l’oiseau qu’on plaint.
+                        C’est l’homme, sur son chemin,
+                        Étranger à son prochain.
+
+                        Et je comprends enfin :
+                        Ce n’est pas le bois,ni le champ.
+                        Ce sont les murs du temps
+                        Les hommes… différents.
+                    </pre>
+                </div>
+                <button class="back-button" data-back="cover">← Retour</button>
+            </article>
+        </section>
+
+        <!-- PARTIE 2 : PARFOIS, LES GRANDS COMBATS SONT INVISIBLES -->
+        
+        <section class="page" id="page-enfant">
+            <article class="content-wrapper">
+                <header>
+                    <h2 class="page-title">Ne tuez pas mon enfant !</h2>
+                    <p class="poem-part">Partie 2 : Parfois, les grands combats sont invisibles</p>
+                </header>
+                <div class="poem-content">
+                    <pre class="poem-text">
+                        Elle marche en silence,
+                        au milieu des ruines,
+                        Ses pas fendent les cendres et l’odeur du métal.
+                        Sous les cris déchirants que le ciel assassine,
+                        Elle porte un enfant dans un monde brutal.
+
+                        Son ventre est un abri qu’écrase la tempête,
+                        Un temple vivant sous les bombes sans nom.
+                        Le vent hurle, l’alerte écorche chaque fête,
+                        Son haleine devient chant, fragile abandon.
+
+                        Les vitres sont tombées comme tombent les larmes,
+                        La ville s’effondre en chaos et débris.
+                        Elle avance, le dos chargé d’invisibles armes,
+                        Et son corps protège un futur interdit.
+
+                        Son flanc d’ivoire scelle une promesse en cendre,
+                        Un vœu secret gravé sous les gravats mouvants.
+                        Elle chemine au cœur de ce qu’on peine à tendre,
+                        Lumineuse en plein cri, au centre des tourments.
+
+                        Nulle prière au ciel, juste une rage sainte
+                        D’une femme debout, que personne ne voit.
+                        Sirènes, éclats, rafales la ceinturent sans plainte
+                         Mais en elle, une force plus forte que la loi.
+
+                        Ses mains posées sur lui forment une muraille,
+                        Son souffle tisse un pacte au bord du ravin.
+                        Chaque pas devient cri, chaque pas une faille,
+                        Et son ventre résiste au chaos incertain.
+
+                        Elle murmure : « Toi, flamme née du désastre,
+                        Je te donnerai tout, même au bord du vide.
+                        Regarde dans mes yeux le halo d’un astre,
+                        Tu naîtras dans la nuit, ta clarté me décide. »
+
+                        Alors que le monde s’effondre et vacille,
+                        Elle trace une route, invisible et fragile.
+                        Sous les cieux éclatés, elle forge demain 
+                        Car ce qu’elle enfante, survivra entre ses mains.
+                    </pre>
+                </div>
+                <button class="back-button" data-back="cover">← Retour</button>
+            </article>
+        </section>
+
+        <section class="page" id="page-sdf1">
+            <article class="content-wrapper">
+                <header>
+                    <h2 class="page-title">L'sdf du trottoir</h2>
+                    <p class="poem-part">Partie 2 : Parfois, les grands combats sont invisibles</p>
+                </header>
+                <div class="poem-content">
+                    <pre class="poem-text">
+                  
+                    
+                    Je baroude de baraque en baraque,
+                    Sans toit, sans sol,
+                    sans port où m’ancrer.
+                     
+                    Je ne suis pas baroque
+                    je crie face au roc,
+                    J’entonne l’aube, coq muet sous les chocs.
+
+                    Je rame entre lames,regards qui lacèrent,
+                    Je brûle mes flammes pour fendre l’éther.
+                    Je tombe, je tends, je me relève encore,
+                    Cherchant un sens là où l’acide sort.
+
+                    Je cueille des chats, des bons perdus,
+                    Une gorgée de matcha dans la nuit tordue.
+                    Une horde de rats m’invite à l’égout,
+                    Parmi les murs sales où le réel devient flou.
+
+                    Je retourne au lit, un sol effondré,
+                    Comme un fils qu’on lit sur mur déchiré.
+                    Je tourne, je bredouille, je compte Bernoulli,
+                    Les chiffres m’assaillent, mes murs sont fléchis.
+
+                    Intello paumé parmi vautours du soir,
+                    Homme d’idées, SDF du trottoir.
+                    Je tends la main, vingt-quatre à l’aube,
+                    Les Lego noyés rappellent l’enfant pauvre.
+
+                    Les trajectoires flanchent,le vide fait loi,
+                    Je compte mes clopes au poids de mes choix.
+                    Fumées nocturnes, créditées en crevette,
+                    Une tonne s’abat dans la cuvette.
+
+                    Il savait qu’un jour je marcherais droit,
+                    Que jamais je ne plierais sous le froid.
+                    Qu’au milieu du rien, du silence sans lien,
+                    Je rendrais mes dettes, sans plainte, ni bien.
+
+                    Il savait que mes valeurs ne tombent pas du ciel,
+                    Elles surgissent de la boue, du concret, de l’essentiel.
+                    Même affamé, je tenais mes accords,
+                    Même oublié, je gardais mon décor.
+
+                    Je suis le veilleur, colonne sans socle,
+                    L’homme qu’on décrit , sans bloque.
+                    Rebelle discret, trop fier pour plier,
+                    Plus vrai que ceux qu’on loue pour aimer.
+
+                    Je mérite un regard qu’on n’éteint pas trop 
+                    La dignité du poids que je traîne à mon dos.
+                    Je mérite d’apprendre, de bâtir ma chance,
+                    Pas des miettes lancées sans conscience.
+
+                    Je sais qu’un pigeon peut voler très haut,
+                    Tirer sa clarté des fond des tréfonds.
+                    Ce n’est pas ce sort que je voulais cueillir,
+                    Mais une seule chance suffit pour bâtir.
+
+                    Un travail où mes mains renaissent enfin,
+                    Un lieu pour marcher sans détour, sans frein.
+                    Un amant fertile, un demain sans soupçon 
+                    C’est tout ce qu’on mérite, même sans maison.
+
+                    Alors dis-moi, toi, le dormeur à l’abri des secousses
+                    Combien faudra-t-il de litres pour qu’un cœur s’émousse ?
+                    </pre>
+                </div>
+                <button class="back-button" data-back="cover">← Retour</button>
+            </article>
+        </section>
+
+        <section class="page" id="page-innocent">
+            <article class="content-wrapper">
+                <header>
+                    <h2 class="page-title">Je suis innocent</h2>
+                    <p class="poem-part">Partie 2 : Parfois, les grands combats sont invisibles</p>
+                </header>
+                <div class="poem-content">
+                    <pre class="poem-text">
+                    
+                    Il venait de très loin, d’un pays en lambeaux,
+                    Rescapé du fracas, du silence des maux.
+                    Il marchait dans la rue, petit roi sans palais,
+                    Les pieds nus, le regard brûlé par les galets.
+
+                    Il tendait une main où sommeille l’absence,
+                    Réclamant un regard, une brève espérance.
+                    Il cherchait un manteau, du feu, quelques morceaux,
+                    Pour apaiser la nuit qui dansait sur sa peau.
+
+                    Ce petit exilé, sans foyer, sans repère,
+                    Parlait le doux langage des murs et de la pierre.
+                    Non celui des écoles, des plumes, des leçons,
+                    Mais celui qu’on murmure au fond des prisons.
+
+                    Ce jour-là dans la foule, un silence m’atteint,
+                    Son sourire éclatant fendit l’ombre du matin.
+                    Il demanda, joyeux, non de pain, ni d’argent,
+                    Mais un jeu, un bâton, comme un souffle d’enfant.
+
+                    Je lui tends du sucre, un carré de douceur,
+                    Il recule, discret, les yeux pleins de pudeur.
+                    « Ce que je veux ici, ce n’est pas à manger,
+                    Mais l’enfance perdue qu’on m’a su ravager. »
+
+                    Ses yeux levés au ciel portaient mille orphelins,
+                    Il fuyait la pitié, les armes, les destins.
+                    Ce qu’il voulait vraiment, c’était peu, c’était droit:
+                    Un jeu, une lumière, une simple once de joie.
+
+                    Alors je tends ce rien, ce trésor dérisoire,
+                    Et l’enfant vient à moi, sans rempart, sans histoire.
+                    Une étreinte furtive, un instant suspendu,
+                    Où l’enfant devient roi, où le froid est vaincu.
+
+                    Je garde en mon silence, au secret de mon cœur,
+                    Ce regard affamé où surgissait l’ardeur.
+                    Ce petit roi du vide, en exil ignoré,
+                    M’a dit que l’innocence ne peut s’effacer.
+
+                    Derrière chaque mur, chaque pierre qu’on dresse,
+                    Un enfant attend l’aube, sans haine, sans détresse.
+                    Il ne quête ni l’or, ni les lois, ni l’écrin,
+                    Mais un jeu, un regard… une main dans la main.
+
+                    Ainsi passe l’enfant aux pas doux et voilés,
+                    Messager du futur que l’on veut oublier.
+                    
+                    </pre>
+                </div>
+                <div class="note-section">
+                    <h3 class="note-title">Note</h3>
+                    <div class="note-content">
+                        <p>Ce poème est inspiré d’un moment réel. Un jour, un enfant exilé m’a demandé un jouet. Il a refusé l’argent, la nourriture, les bonbons. Il voulait juste… un jouet.Ce regard, je ne l’ai jamais oublié.</p>
+                    </div>
+                </div>
+                <button class="back-button" data-back="cover">← Retour</button>
+            </article>
+        </section>
+
+        <section class="page" id="page-forage">
+            <article class="content-wrapper">
+                <header>
+                    <h2 class="page-title">Au forage de mon destin</h2>
+                    <p class="poem-subtitle">Hommage à une femme incarcérée, libre par l'imaginaire</p>
+                    <p class="poem-part">Partie 2 : Parfois, les grands combats sont invisibles</p>
+                </header>
+                <div class="poem-content">
+                    <pre class="poem-text">
+                Au creux de l’abîme où bat mon cœur,
+                J’ai creusé un puits profond de lueur.
+                Une graine d’amour, bercée par l’aube,
+                A germé parmi les ombres du globe.
+
+                Les rayons levés, tels des doigts d’or,
+                Ont effleuré mes plaies, réveillé le corps.
+                Le parfum des fleurs, léger, sacré,
+                A caressé mes songes égarés.
+
+                Le chant des oiseaux, venu de nulle part,
+                Tisse des fils d’azur dans le noir.
+                Le souffle du matin, guide invisible,
+                Ouvre un chemin doux et indicible.
+
+                Voyage sans frontière ni fissure,
+                Amour limpide, sans heurt, sans blessure.
+                Vert profond, sans flétrissure,
+                Les fleurs racontent chaque aventure.
+
+                Chacune porte en elle une flamme
+                Qui se consume sans peur, sans drame.
+                Tout au bout du silence immense,
+                Au creux même de l’errance,
+
+                Une braise s’anime en moi,
+                Appelle l’océan, appelle l’émoi.
+                Plonger jusqu’au bleu des abysses,
+                Rêve ultime où l’âme glisse.
+
+                Parmi sardines, daurades en danse,
+                Visiteurs d’une mer en silence,
+                Cheveux d’or, soleils brûlants,
+                Éclats de sel au goût du vent.
+
+                Plus haut, le Mont-Blanc s’élève,
+                Spectre immaculé parmi mes rêves.
+                Élan profond, regard suspendu,
+                Je rejoins l’élément perdu.
+
+                Impressionnantes silhouettes du vivant,
+                Nature secrète, battement du temps…
+                Dans toutes tes saisons tu resplendis :
+                Énigme sacrée, lumière infinie.
+
+                C’est dans cet orage 
+                Que j’ai rencontré l’image
+                Je rame dans le temps qui fuit,
+                Mes pensées roulent sans abri.
+
+                C’est pour toi que je voulais vivre,
+                Un amour pur, sans dérive.
+                Maintenant qu’on s’est trouvés,
+                Comment pourrais-je te quitter ?
+
+                Tous les deux, on s’est promis
+                Une vie sans un mépris.
+                Tous les deux, on s’est promis
+                Une éternité.Une vie.
+
+                Joyeuse, heureuse, amoureuse,
+                Des plages aux marchés,
+                Sans fatigue, sans regrets,
+                Un vrai amour partagé.
+
+                À deux, nous bâtissions une maison
+                Au milieu d’un vaste horizon.
+                Nous cultivions le riz, les fruits,
+                Et nous partagions chaque nuit.
+
+                Sur notre île d’amour,
+                On oubliait les détours.
+                Sur notre île de paix,
+                Le demain était prêt.
+
+                Main dans la main, je déclarais
+                Ma flamme, et il me la redonnait.
+                Ensemble à jamais, unis,
+                Nos doigts tissaient l’infini.
+
+                Une équipe de cœurs est née,
+                Joie pure, simplicité.
+                Une famille nombreuse,
+                Notre tribu précieuse.
+
+                De deux enfants jusqu’à six,
+                Qu’espérer de plus, que dire ?
+                Rires, chaleur, cris de bébé…
+                Oh, merveilleuse vie rêvée !
+
+                Ils ont grandi, tous les six,
+                Créant leur propre édifice.
+                Études, métiers, familles bâties,
+                Chacun a conquis sa vie.
+
+                J’étais une bonne maman,
+                Maligne face à l’imprévu.
+                Toujours là, toujours présente,
+                Protectrice, douce et ardente.
+
+                Et tous me regardent aujourd’hui
+                Avec tendresse et appui.
+                Et le monde nous contemple,
+                Notre lignée forte et simple.
+
+                Mais soudain, tout se fissure.
+                Ma tête cogne contre le mur.
+                Mes larmes coulent, sans effort,
+                Et mes rêves tombent, morts.
+
+                C’est là que je réalise,
+                Je ne suis pas aux Maldives.
+                Je suis dans une cellule grise,
+                Quatre murs, une porte, aucune bise.
+
+                Je ris fort d’une autre histoire,
+                Sept livres écrits sans mémoire.
+                Je ris fort de ce que je vis,
+                Rien de réel… tout est en moi, ici.
+
+                Je voyage sans bouger,
+                Je vis sans m’éloigner,
+                J’aime sans vérité,
+                Je danse sans invité.
+
+                Enfermée, oui mais sans remords.
+                Je ne crains plus même la mort.
+                Je coche les jours,lentement,
+                Pour retrouver mon propre temps.
+
+                Je n’ai ni mari, ni enfants,
+                Je suis seule, profondément.
+                Mais dans ma cellule nue,
+                Je trace demain, à mains nues.
+
+                Je suis là, dans l’ombre qui dure,
+                Je rêve, j’écris, je murmure.
+                Et même sans témoin, sans voisin…
+                Je poursuis le forage de mon destin.
+                                    </pre>
+                </div>
+                <button class="back-button" data-back="cover">← Retour</button>
+            </article>
+        </section>
+
+        <section class="page" id="page-esclavage">
+            <article class="content-wrapper">
+                <header>
+                    <h2 class="page-title">Au creux des clivages - L'esclavage</h2>
+                    <p class="poem-part">Partie 2 : Parfois, les grands combats sont invisibles</p>
+                </header>
+                <div class="poem-content">
+                    <pre class="poem-text">
+                        
+
+                        Ivresse des tigresses,
+                        Là où l’encre se tasse,
+                        Fresque de chimères,
+                        L’apogée fracasse.
+
+                        Armure galactique,
+                        Paradoxe éclectique,
+                        Néant en splendeur,
+                        Zéphyr des rancœurs.
+
+                        Ondé, le sillage
+                        Au creux des clivages,
+                        Grâce d’un doux village,
+                        Mosaïque, parure, liage.
+
+                        Passage des sursauts,
+                        Ou apogée d’assaut,
+                        Loi crue du vortex,
+                        Et présage latex.
+
+                        Néant du village
+                        Justifie l’usage 
+                        Ô pauvre visage,
+                        Brutal esclavage.
+
+                        Du crochet au clocher,
+                        À la mémoire des pierres,
+                        Debout, travail, prière
+                         Toutes rudes ses mains,
+                         Sans parfait demain.
+
+                        Échine en silence,
+                        Chante l’obéissance,
+                        Dans l’ombre des liens,
+                        Ses rêves orphelins.
+
+                        Souffle en déroute,
+                        L’écho le redoute,
+                        Et l’aube le fuit
+                        Comme l’eau d’une nuit.
+
+                        Cri sans langage
+                        Frappe le rivage.
+                        Au feu du non-dit,
+                        Il devient oubli.
+                    </pre>
+                </div>
+                <button class="back-button" data-back="cover">← Retour</button>
+            </article>
+        </section>
+
+        <section class="page" id="page-combat">
+            <article class="content-wrapper">
+                <header>
+                    <h2 class="page-title">J'ai foiré mon combat</h2>
+                    <p class="poem-part">Partie 2 : Parfois, les grands combats sont invisibles</p>
+                </header>
+                <div class="poem-content">
+                    <pre class="poem-text">
+                    Elle effleure les heures d’un pas entrelacé,
+                    Mariel, douce enfant qu’un char veut lier.
+                    Fille d’un village où le chef se croit roi,
+                    Il forge des remparts, il impose sa loi.
+
+                    Nul ne doit l’approcher, ni de loin, ni de près,
+                    Il l’enferme, croyant la soustraire aux regrets.
+                    La frêle prisonnière ignore le pourquoi,
+                    Ne songe ni au terme, ni aux chaînes d’autrefois.
+
+                    Son esprit, éclat vif qu’étouffe la foie,
+                     l’aube, trop tardive, cruelle parois,
+                     Lui livre le miroir d’un brutal gaulois .
+                    Son âme vacille, son cœur se déchire,
+                    Le choc est funeste, le trouble la tire.
+                    
+                    Séquestrée, meurtrie par ses propres amants
+                    Elle hérite d’un mal, un fardeau galant.
+                    L’adolescence en friche, l’effroi pour compagne,
+                    Elle fuit chaque regard, elle craint la campagne.
+                    
+                    Ignorant vers qui tendre un appel confus,
+                    Elle sait seulement qu’un jour la clarté rompt l’absolu.
+                    Enfin libre, elle ose à ramer un dessein :
+                    Elle frappe à la porte d’un chameau lointain.
+                    
+                    Son regard s’attarde sur un fruit vermeil,
+                    Elle y croque un message, un présage du ciel.
+                    Mariel chemine vers la rive enchantée,
+                    Où des myriades de feux la guident sans hâter.
+                    
+                    Les flots sont des taches passion 
+                    ou murmures des eaux en sa rédemption.
+                    Un sentier se tisse à ses pas,
+                    Le vent y dépose un chant 
+                    qu’elle ne connaissait pas.
+                    
+                    Elle s’avance, guidée 
+                    par l’écho des ramées,
+                    Vers ce havre secret
+                     où le sombre est domptée.
+
+                    Et dans le murmure des oiseaux, messagers ,
+                    Mariel reconnaît la douceur d’un ménagers
+                    Elle continue son chemin 
+                    malgré l’orage du sort,
+                    Portant en elle l’espoir,
+                    et le poids du décor.
+                    
+                    Aujourd'hui elle arrive où l’or dicte la loi,
+                    Une société de murs où l’on piétine la foi.
+                    Mariel, douce lumière aux rêves silencieux,
+                    Frappe à mille portes où l’accueil est douloureux.
+                    
+                    « Pas de place ici-bas pour l’âme trop naïve,
+                    Seuls les hommes rodés voient la gloire s’esquive.»
+                    Pourtant elle tient bon, elle arrime l’étude,
+                    Accumule des diplômes tels des clefs de certitude.
+                    
+                    Mais revient chaque soir, les mains vides, le regard lourd,
+                    Comme une chasse avortée qu’on piétine à rebours.
+                    Elle respire un air serré, où le monde devient petit,
+                    Où le poids des murs tombe, où le temps la trahit.
+                    
+                    Ce lieu devient tombeau où l’innocente espérance,
+                    Se perd parmi les âmes où gît l’indifférence.
+                    Elle choisit malgré tout de marcher dans la nuit,
+                    De prolonger l’étude où l’aigle devient pluie.
+                    
+                    Mariel devient médecin, portant l’armure du livre,
+                    Espérant qu’au regard du monde elle s’en délivre.
+                    Mais la société crie, elle jette des préjugés,
+                    Comme des pluies de cendre où le pur vient plonger.
+                    
+                    Mariel tient encore, elle marche malgré l’opprobre,
+                    Espérant qu’au matin l’aube chasse le sombre.
+                    Elle continue son chemin malgré l’orage du sort,
+                    Portant en elle l’espoir, et le poids du décor.
+    
+                    C’est alors qu’apparaît, parmi l’ombre du lieu,
+                    Un être qu’elle nomme astre, qu’elle nomme dieu.
+                    Riche, il promet le ciel, un château où elle règne,
+                    Une vie où le poids du passé s’en éteigne.
+
+                    Mariel, naïve enfant bercée par le regard,
+                    Se livre à l’inconnu qu’elle prend pour rempart.
+                    Elle s’enferme vingt ans derrière des murs de pierre,
+                    Pensant toucher l’amour, atteindre la lumière.
+
+                    Mais le château devient tombeau où le silence crie,
+                    Elle devient prisonnière d’un jeu qu’on décrie.
+                    Pas d’enfant, pas de travail, elle devient ombre sage,
+                    Épouse invisible qu’on condamne à l’otage.
+
+                    l’amour devient chaîne qu’on tresse,
+                    Plus lourd que la nuit où l’astre du temps blesse.
+                    Vingt ans ainsi filent, tels des astres mourants,
+                    Elle porte un poids trop lourd pour un corps si vivant.
+                    
+                    Elle s’efface du monde où elle voulut briller,
+                    Étoile qu’on a su peu à peu oublier.
+                                        </pre>
+                </div>
+                <button class="back-button" data-back="cover">← Retour</button>
+            </article>
+        </section>
+
+        <section class="page" id="page-sdf2">
+            <article class="content-wrapper">
+                <header>
+                    <h2 class="page-title">L'sdf du trottoir 2</h2>
+                    <p class="poem-part">Partie 2 : Parfois, les grands combats sont invisibles</p>
+                </header>
+                <div class="poem-content">
+                    <pre class="poem-text">
+<!-- COLLEZ VOTRE POÈME ICI -->
+                    </pre>
+                </div>
+                <button class="back-button" data-back="cover">← Retour</button>
+            </article>
+        </section>
+
+        <section class="page" id="page-menage">
+            <article class="content-wrapper">
+                <header>
+                    <h2 class="page-title">La femme de ménage</h2>
+                    <p class="poem-part">Partie 2 : Parfois, les grands combats sont invisibles</p>
+                </header>
+                <div class="poem-content">
+                    <pre class="poem-text">
+                      
+
+                        Moi, penchée sur des mots,
+                        elle vint tout bas :
+                        « Puis‑je te déranger, excuses , juste là ? »
+                        « Pardonne‑moi, Majesté, si je gêne le lieu,
+                        Si ma poussière trouble l’ordre de vos cieux. »
+
+                        Je levai mes deux yeux, bouleversée, émue,
+                        « C’est à moi d’obéir, force perdue.
+                        Si tu le souhaites fort, je t’offrirai mes mains,
+                        Pour guider le balai où naît le demain. »
+
+                        Elle s’assit à côté, la voix pleine de huit,
+                        « Moi qu’on frôle ,qu’on juge sans appui,
+                        Moi qu’on dit , étrangère à vos murs,
+                        Je porte l’univers où vos âmes mûrissent.
+
+                        Je nettoie vos traces, vos peines, vos détresses,
+                        Pour que vos pas trouvent lumière et tendresse.
+                        Mais je ne fus jamais qu’un chiffon oublié,
+                        Une branche du lieu que l’on a piétinée.
+
+                        Pourtant j’étais brillante, aux lettres consacrée,
+                        Étudiante perdue, par le poids fracassée.
+                        La vie m’a pris trop tôt mes plus tendres saisons,
+                        Pour nourrir mes cadets, guider mes frêles garçons.
+
+                        Premier amour brisé par l’orage,
+                        Deuxième union gravé au rouages,
+                        Il était soldat fier, 
+                        l’aile du champ de guerre,
+                        Il laissa des trésors pour fleurir la terre.
+
+                        Cinq âmes que je porte, trésors de mes matins,
+                        Deux partis sur la route où l’étude devient pain.
+                        Les autres à mes côtés, serrés tout contre moi,
+                        Guidés par ma sueur, bercés par ma foi.
+
+                        Aujourd'hui je nettoie vos murs et vos entrées,
+                        Pour que vos âmes s’élancent, franchissent vos idées.
+                        Pourtant qu’a‑t‑il de bas, ce travail où je plie,
+                       
+                        Si c’est lui qui construit l’élan de vos vies ?
+                        Ma sueur devient or, devient source infinie,
+                        Ma santé devient socle où l’espoir s’assied.
+                        On me dit trop souvent : « Tu vaux mieux que cela ! »
+                        Mais qu’en savent‑ils, eux, du poids qu’on portera ?
+
+                        Ce lieu devient temple où je sème la graine,
+                        Pour qu’aujourd'hui ou demain, l’âme devient sereine.
+                        Ma vie devient poème où la terre est écrite,
+                        Une flamme où l’effort devient force infinie. »
+
+                        Elle s’en est allée, gardienne du silence,
+                        Reine du corridor où sommeille l’absence.
+                        Elle laissa derrière elle un parfum de lumière,
+                        Une aura où le poids devient flambeau de pierres.
+
+                        C’est ainsi que je vis qu’au bout du long chemin,
+                        Se cache l’héroïsme où s’ancre le divin.
+                        Celle qu’on ne voit pas devient socle du lieu,
+                        Une étoile parmi l’ombre où s’inclinent les dieux.
+
+                        Elle balaye le sol, elle construit l’univers,
+                        Elle écrit parmi nous le poème du fier.
+                        Car elle est le regard qu’on néglige trop fort,
+                        La gardienne du lieu, la racine du sort.
+
+                        Sa vie devient flambeau où s’élève le jour,
+                        Elle nettoie la terre, elle sème l’amour.
+                        Car elle est l’humble voix où repose le vrai,
+                        Le socle du monde qu’on ne brise jamais.
+
+                    </pre>
+                </div>
+                <button class="back-button" data-back="cover">← Retour</button>
+            </article>
+        </section>
+
+        <section class="page" id="page-legende">
+            <article class="content-wrapper">
+                <header>
+                    <h2 class="page-title">La légende</h2>
+                    <p class="poem-part">Partie 2 : Parfois, les grands combats sont invisibles</p>
+                </header>
+                <div class="poem-content">
+                    <pre class="poem-text">
+                    
+                    Il était un vieux sage, aveugle parmi l’alpage,
+                    Le regard prisonnier des murs d’un long voyage.
+                    La lumière du monde l’avait abandonné,
+                    Mais jamais son regard ne s’était détourné.
+                    Il marchait à tâtons parmi les rochers,
+                    Écoutait les brebis, savait les appeler.
+                    
+                    Il posait une main, douce comme le soir,
+                    Reconnaissait la laine, le poids du désespoir.
+                    Pour lui, chaque mouton portait un nom sacré,
+                    Chaque bêlement doux semblait lui murmurer
+                    
+                    Les secrets du vallon, du pré où tout repose,
+                    Le parfum du silence, le poids du temps qu’on ose.
+                    Il vivait retiré, loin du bruit des hommes,
+                    Éleveur des montagnes, gardien du qui sommes.
+                    
+                    Ses chevaux étaient fils, ses brebis des amies,
+                    Et malgré l’ombre noire, la lumière luit en lui.
+                    Il écrivait des poèmes qu’aucun œil ne lirait,
+                    Offrant à l’horizon les chants qu’il captait.
+                    
+                    Il gardait des secrets que le vent emportait,
+                    Des mots que l’aveuglé à la terre confiait.
+                    Même sans yeux ouverts, son regard était large,
+                    Plus profond que la nuit, plus léger qu’une charge.
+
+                    Il avait trois enfants dispersés en la ville,
+                    Éloignés du vieux père, du chemin trop fragile.
+                    Pour eux, la vie était aux murs, aux immeubles,
+                    Au bruit des voitures, à l’or qu’on accable.
+                    
+                    Mais lui, l’homme du pré, jamais ne consentait
+                    À quitter la montagne où son passé dormait.
+                    Alors ils revinrent, décidés à tenter
+                    De l’arracher à l’aigle, à l’herbe, à la rosée.
+                    Pour l’emmener en bas, l’entourer de remparts,
+                    
+                    Pour qu’il finisse ses jours loin du froid des départs.
+                    Mais lui disait tout bas, parmi la brume grise :
+                    « Je vis où bat le vent, où l’aigle se précise.
+                    Ma vie est ici, où la terre respire,
+                    Ma tombe sera là où s’achève le dire. »
+
+                    Les fils pensaient ainsi : s’il ne veut nous rejoindre,
+                    Il nous faudra ruser, et son regard atteindre.
+                    « Si ses brebis s’en vont, s’il perd tout à jamais,
+                    Il nous suivra en bas, où le sol est pavé. »
+                    
+                    Alors ils appelèrent des hommes sans scrupules,
+                    Des ombres dans la nuit, des âmes qu’on bouscule.
+                    « Allez, à dix‑huit heures, le vieux sort du hameau,
+                    Suivez‑le parmi l’herbe, volez‑lui un agneau. »
+
+                    Une nuit, puis deux nuits, l’aveugle sentit l’ombre,
+                    Une marche derrière, un poids qu’on encombre.
+                    Il comptait à l’oreille le poids des pas muets,
+                    Sentait parmi la nuit le jeu qu’on préparait.
+                    
+                    Déjà deux fois, des âmes avaient pris un trésor,
+                    Emportant parmi l’herbe la vie du vieux décor.
+                    Mais lui restait de marbre, l’oreille aux vents glacés,
+                    Préparant à son heure le piège des blessés.
+                    
+                    Il appela tout bas deux jeunes du village,
+                    Leur dit où s’embusquer, comment finir l’outrage.
+                    « Demain, à la tombée du soir, à l’heure où tombe,
+                    Ils reviendront jouer la nuit qu’on nous encombre. »
+
+                    Ce soir‑là, l’alpage dormait parmi les pierres,
+                    Le vieux sortit, portant la nuit en bandoulière.
+                    Les ombres l’entourèrent, et tout bas l’attaquèrent,
+                    Mais du bois des sapins jaillirent des guerriers.
+                    Les hommes du village accoururent à l’appel,
+                    Le duel éclata parmi la nuit cruelle.
+
+                    Les lames se levèrent, des cris percèrent l’air,
+                    Et le vieux, parmi tout, sentit la nuit de fer.
+                    Une lame traversa le poids de son vieux corps,
+                    Il tomba parmi l’herbe, serrant la nuit plus fort.
+
+                    Alors, parmi le sang, parmi la terre sombre,
+                    Il leva son regard où flottait déjà l’ombre.
+                    Emporté à l’hôpital, loin du chant des collines,
+                    Il gisait parmi nous, parmi le poids des ruines.
+
+                    Les enfants entouraient le vieux roi des montagnes,
+                    Le regard plein de larmes où l’amour s’accompagne.
+                    Le vieux dit à mi‑voix, sans colère, sans haine :
+                    « Parlez… avant que tombe en moi la nuit sereine… »
+
+                    Ils s’avancèrent alors, le regard lourd de peine,
+                    Le poids du remords serrant fort leurs haleines.
+                    « C’est nous… » dirent‑ils bas, parmi le flot des mots,
+                    « Qui avons ouvert la nuit au poids de vos maux. »
+                    « Nous voulions vous sauver du poids de vos murs,
+                    Mais nous avons ouvert la porte à la blessure. »
+
+                    Le vieux ferma les yeux, ultime regard pur,
+                    « Je sais… » dit‑il tout bas, d’une voix douce et sûre.
+                    « Je sais que l’enfant tombe souvent par orgueil,
+                    Je sais que l’amour pur est plus fort que le deuil. »
+                    
+                    « Je sais que vos âmes ne savaient que faire,
+                    Pour guider vos pas hors du poids de la terre. »
+                    « Et vous, malgré la nuit où tombe ma lumière,
+                    Restez hommes de cœur malgré vos chimères.
+                    Aimez vos enfants comme j’aimais mes pierres,
+                    Aimez vos montagnes malgré vos frontières. »
+
+                    « Je sais que l’erreur devient poids du passé,
+                    Mais qu’au bout du chemin tout peut s’apaiser.
+                    Ma terre vous appelle, elle restera là,
+                    Pour vos âmes en peine, elle s’ouvrira. »
+                    Alors, parmi le silence où la nuit s’incline,
+                    Le vieux rendit son souffle à l’aile divine.
+                    
+                    Les murs du passé s’écroulèrent sans fracas,
+                    Le vent parmi la plaine chantait tout bas :
+                    « Ici repose un père, un aveugle regardant,
+                    Un sage parmi l’herbe où repose le temps.
+                    Qu’on apprenne de lui que la terre pardonne,
+                    Qu’un regard sans lumière peut guider des personnes. »
+
+                    « Et qu’au bout du chemin, parmi l’herbe endormie,
+                    L’homme s’élève encore, malgré la nuit, malgré l’ennui.
+                    Qu’on se souvienne ainsi du poids de la tendresse,
+                    D’un vieux aveugle fier, roi parmi la détresse… »
+
+                    Et parmi le silence où dormait la vallée,
+                    Les fils restaient brisés, l’âme bouleversée.
+                    Ce qu’ils avaient semé n’était que tendre ardeur,
+                    Pour libérer le père du poids de la sueur.
+
+                    Ils voulaient le soustraire à l’usure du temps,
+                    Le guider vers la paix du soleil finissant.
+                    Qu’il repose enfin, qu’il ferme un peu les yeux,
+                    Qu’il dorme sans frissons sous un abri des cieux.
+
+                    Ils avaient espéré qu’au bout de ce chemin,
+                    Le père marcherait, léger parmi les siens.
+                    Ils rêvaient du regard qu’il poserait, serein,
+                    Chaque aube à leur côté, chaque soir en chemin.
+
+                    Mais le poids de l’erreur a broyé l’intention,
+                    La lumière du cœur s’est changée en prison.
+                    Ils pensaient le guider, ils l’ont vu s’écrouler,
+                    Par un jeu du destin qu’ils n’auraient su dompter.
+                    
+                    Alors, parmi les murs où dormait le vieil homme,
+                    Le poids de son regard les frappa comme une somme.
+                    « Je sais… » disait‑il bas, de son ultime voix,
+                    « L’amour devient parfois l’arme qui nous broie. »
+
+                    « Mais je sais vos intentions, vos âmes inquiètes,
+                    Ce poids que vous portiez en silence, en cachette.
+                    C’est l’amour qui vous tient, malgré vos gestes lourds,
+                    C’est l’amour qui pardonne, malgré le poids du jour. »
+
+                    Il ferma doucement les paupières épuisées,
+                    Emportant dans la nuit les âmes apaisées.
+                    Et les fils, à genoux, parmi l’herbe du soir,
+                    Comprirent que l’amour devient flamme ou rasoir.
+
+                    Car le poids du regard, qu’on nomme parent,
+                    Est un cercle infini où l’enfant devient grand.
+                    Ce qu’on sème de cœur, de lumière, de nuit,
+                    Reste un lien immortel malgré la tragédie.
+                    
+                    Ainsi repose le vieux, parmi l’aube infinie,
+                    Gardien du souvenir, du poids de nos vies.
+                    Et ses fils, à jamais, porteront en leur sein,
+                    L’aveugle regard du père qui guide le chemin.
+                                        </pre>
+                </div>
+                <button class="back-button" data-back="cover">← Retour</button>
+            </article>
+        </section>
+
+        <!-- PARTIE 3 : CE QU'ON DEVIENT -->
+        
+        <section class="page" id="page-berceau">
+            <article class="content-wrapper">
+                <header>
+                    <h2 class="page-title">Un seul berceau</h2>
+                    <p class="poem-part">Partie 3 : Ce qu'on devient</p>
+                </header>
+                <div class="poem-content">
+                    <pre class="poem-text">
+<!-- COLLEZ VOTRE POÈME ICI -->
+                    </pre>
+                </div>
+                <button class="back-button" data-back="cover">← Retour</button>
+            </article>
+        </section>
+
+        <section class="page" id="page-louanges">
+            <article class="content-wrapper">
+                <header>
+                    <h2 class="page-title">C'est pas les louanges !</h2>
+                    <p class="poem-part">Partie 3 : Ce qu'on devient</p>
+                </header>
+                <div class="poem-content">
+                    <pre class="poem-text">
+                        C’est pas les louanges !
+
+                        Chaque geste, chaque grimace,
+                        Cache un cerveau qui fait la chasse.
+                        Pas au trésor ni aux biscottes,
+                        Mais à l’égo planqué dans les bottes.
+
+                        On dit qu’on pense, qu’on est sérieux,
+                        Mais on panique dès qu’il pleut.
+                        Un peu de stress, une voix trop forte,
+                        Et la logique prend la porte.
+
+                        On voulait tous être frères unis,
+                        Mais dès qu’un brille, ça fait des cris.
+                        “Pourquoi lui ? Pourquoi lui?”
+                        Et l’amitié fait « pschitt » comme du soda.
+
+                        Y’a celui qui veut tout diriger,
+                        Et l’autre qui cherche à respirer.
+                        Mais qu’un seul monte sur le tabouret,
+                        Et c’est la guerre des cuillers à café.
+
+                        Pourtant les vieux livres et grands discours
+                        Ont pas été écrits pour faire la cour.
+                        Ils racontent pas des contes de fées,
+                        Mais des galères qu’on a traversées.
+
+                        Aujourd’hui c’est bilan, chiffres et buzz,
+                        On aime les likes, on aime les cakes
+                        On vend du vent dans des jolis pots,
+                        Et la sincérité ? Oh, trop rétro !
+
+                        Le vrai succès ? C’est pas les louanges,
+                        C’est dormir bien sans faire la manche.
+                        C’est rester droit même en chaussettes trouées,
+
+                        Pas la peine de sauver le fou si la reine vit dans le fouet 
+                        Pas la peine de mentir le flow si Pinocchio est déjà doué
+                        Quand le monde veut qu’on soit déguisé.
+                        Mais y’en a qui rient des passionnés,
+                        
+                        Ils se moquent, façon de se protéger.
+                        Ils cassent ce qu’ils pigent pas trop,
+                        Comme un gosse jaloux d’un château Lego.
+
+                        L’erreur c’est pas de ne pas savoir,
+                        C’est de grincer quand l’autre veut voir.
+                        Et ceux qui la ferment, croyez pas qu’ils fuient
+                        Ils visent juste mieux que les bruits.
+
+                        Silence n’est pas synonyme de bêtise,
+                        C’est parfois juste une tactique exquise.
+                        Un petit clin d’œil dans le brouhaha,
+                        Pendant que les autres font du bla-bla.
+
+                        Alors nos liens, c’est du velcro ou du scotch ?
+                        On se colle, on s’arrache, on se reproche ?
+                        La vraie classe, c’est quand t’applaudis discret,
+                        Et pas quand tu hurles : “C’est moi le parfait !”
+                    </pre>
+                </div>
+                <button class="back-button" data-back="cover">← Retour</button>
+            </article>
+        </section>
+
+        <section class="page" id="page-belleu">
+            <article class="content-wrapper">
+                <header>
+                    <h2 class="page-title">Belleu, crois moi</h2>
+                    <p class="poem-part">Partie 3 : Ce qu'on devient</p>
+                </header>
+                <div class="poem-content">
+                    <pre class="poem-text">
+<!-- COLLEZ VOTRE POÈME ICI -->
+                    </pre>
+                </div>
+                <button class="back-button" data-back="cover">← Retour</button>
+            </article>
+        </section>
+
+        <section class="page" id="page-zero">
+            <article class="content-wrapper">
+                <header>
+                    <h2 class="page-title">Accouche le zéro</h2>
+                    <p class="poem-part">Partie 3 : Ce qu'on devient</p>
+                </header>
+                <div class="poem-content">
+                    <pre class="poem-text">
+                        
+                    Accouche le zéro,
+                    Symbole sans écho,
+                    Cercle d’origine,
+                    Oublié des racines.
+
+                    Épure sans volume,
+                    Éclipse sans costume,
+                    Vide fondamental,
+                    À la forme ancestrale.
+
+                    Point d’axe ni d’élan,
+                    Mais un rien brûlant.
+                    Ce rien cardinal
+                    Peut devenir total.
+
+                    Tu crois n’être absence ?
+                    Mais l’ombre est semence.
+                    L’infime est genèse,
+                    Le doute, une thèse.
+
+                    Zéro d’apparence,
+                    Prodige en latence.
+                    C’est lui qui, muet,
+                    A fait naître le vrai.
+
+                    Le zéro, en secret,
+                    Porte le monde entier.
+                    Éveille la clarté,
+                    Fais danser ta pensée.
+
+                    Même sans clameur
+                    Naît parfois le moteur.
+                    Dans l’ombre des chiffres,
+                    Des éclairs s’infiltrent.
+
+                    L’algèbre du cœur
+                    Résout ses propres peurs.
+                    Accouche le zéro,
+                    Fais-en un flambeau.
+
+                    Et que ton néant
+                    Devienne fondement.
+                    Change les consignes,
+                    Trace un seul signe.
+
+                    Et les équations
+                    Tissent l’intuition.
+                    Fais jaillir ton essence,
+                    Grimpe en arborescence.
+                    De ce rien que tu sens,
+                    Va naître le vivant.
+                    </pre>
+                </div>
+                <div class="note-section">
+                    <h3 class="note-title">Note</h3>
+                    <div class="note-content">
+                        <p>Note accouche zéro 
+                    Ce poème est né d’un paradoxe : le vide n’est jamais vide.
+                    Le zéro, souvent perçu comme une absence, est en vérité un point d’origine, un tremblement discret au cœur des choses.
+                    Son apparition dans l’histoire des mathématiques a été une révolution.Il a permis de structurer les nombres, de résoudre des énigmes anciennes, de donner naissance à l’algèbre, à l’équation, au calcul moderne.
+                    Le zéro a résolu l’irrésoluble.
+                    Ce texte est une métaphore de cette puissance cachée.Il s’adresse à ceux qui doutent d’eux-mêmes, qui se croient insignifiants, trop silencieux ou trop tardifs.
+                    Il leur rappelle ceci :le potentiel le plus profond ne fait pas de bruit.Et parfois, c’est dans ce rien que tout commence.
+                    Le zéro, c’est la promesse du possible.C’est l’invisible graine de la création.</p>
+                    </div>
+                </div>
+                <button class="back-button" data-back="cover">← Retour</button>
+            </article>
+        </section>
+
+        <section class="page" id="page-merci">
+            <article class="content-wrapper">
+                <header>
+                    <h2 class="page-title">Merci à l'infini</h2>
+                    <p class="poem-part">Partie 3 : Ce qu'on devient</p>
+                </header>
+                <div class="poem-content">
+                    <pre class="poem-text">
+<!-- COLLEZ VOTRE POÈME ICI -->
+                    </pre>
+                </div>
+                <button class="back-button" data-back="cover">← Retour</button>
+            </article>
+        </section>
+
+    </main>
+
+    <!-- JAVASCRIPT INTÉGRÉ -->
+    <script>
+        // ===================================
+        // GESTION DU THÈME
+        // ===================================
+        const themeToggle = document.querySelector('.theme-toggle');
+        const themeIcon = document.querySelector('.theme-icon');
+        const body = document.body;
+
+        // Charger le thème sauvegardé
+        const savedTheme = localStorage.getItem('theme') || 'dark';
+        if (savedTheme === 'light') {
+            body.classList.add('light-theme');
+            themeIcon.textContent = '🌙';
+        }
+
+        // Toggle du thème
+        themeToggle.addEventListener('click', function() {
+            body.classList.toggle('light-theme');
+            
+            if (body.classList.contains('light-theme')) {
+                themeIcon.textContent = '🌙';
+                localStorage.setItem('theme', 'light');
+            } else {
+                themeIcon.textContent = '☀️';
+                localStorage.setItem('theme', 'dark');
+            }
+        });
+
+        // ===================================
+        // GESTION DU MENU
+        // ===================================
+        const menuBtn = document.querySelector('.menu-toggle');
+        const menuSidebar = document.querySelector('.menu-sidebar');
+        const menuOverlay = document.querySelector('.menu-overlay');
+
+        function toggleMenu() {
+            const isOpen = menuSidebar.classList.toggle('active');
+            menuOverlay.classList.toggle('active');
+            menuBtn.classList.toggle('active');
+            menuBtn.setAttribute('aria-expanded', isOpen);
+            body.style.overflow = isOpen ? 'hidden' : '';
+        }
+
+        menuBtn.addEventListener('click', toggleMenu);
+        menuOverlay.addEventListener('click', toggleMenu);
+
+        // ===================================
+        // GESTION DES SOUS-MENUS
+        // ===================================
+        document.querySelectorAll('.menu-expandable').forEach(btn => {
+            btn.addEventListener('click', function(e) {
+                e.stopPropagation();
+                const submenu = this.nextElementSibling;
+                const isExpanded = this.classList.contains('expanded');
+                
+                // Fermer tous les autres sous-menus
+                document.querySelectorAll('.menu-expandable').forEach(otherBtn => {
+                    if (otherBtn !== this) {
+                        otherBtn.classList.remove('expanded');
+                        const otherSubmenu = otherBtn.nextElementSibling;
+                        if (otherSubmenu) {
+                            otherSubmenu.classList.remove('active');
+                        }
+                    }
+                });
+                
+                // Toggle le sous-menu actuel
+                this.classList.toggle('expanded');
+                if (submenu) {
+                    submenu.classList.toggle('active');
+                }
+            });
+        });
+
+        // ===================================
+        // GESTION DE LA NAVIGATION
+        // ===================================
+        function showPage(pageId) {
+            // Masquer toutes les pages
+            document.querySelectorAll('.page').forEach(page => {
+                page.classList.remove('active');
+            });
+            
+            // Afficher la page ciblée
+            const targetPage = document.getElementById('page-' + pageId);
+            if (targetPage) {
+                targetPage.classList.add('active');
+                
+                // Scroll instantané en haut de la page
+                window.scrollTo({
+                    top: 0,
+                    behavior: 'instant'
+                });
+                
+                // Alternative pour forcer le scroll
+                setTimeout(() => {
+                    window.scrollTo(0, 0);
+                    targetPage.scrollIntoView({ behavior: 'instant', block: 'start' });
+                }, 10);
+            }
+            
+            // Fermer le menu si ouvert
+            if (menuSidebar.classList.contains('active')) {
+                toggleMenu();
+            }
+        }
+
+        // Navigation via les boutons du menu
+        document.querySelectorAll('[data-page]').forEach(btn => {
+            btn.addEventListener('click', function() {
+                showPage(this.getAttribute('data-page'));
+            });
+        });
+
+        // Boutons retour
+        document.querySelectorAll('[data-back]').forEach(btn => {
+            btn.addEventListener('click', function() {
+                showPage(this.getAttribute('data-back'));
+            });
+        });
+
+        // ===================================
+        // GESTION DU CLAVIER
+        // ===================================
+        document.addEventListener('keydown', function(e) {
+            // Fermer le menu avec Escape
+            if (e.key === 'Escape' && menuSidebar.classList.contains('active')) {
+                toggleMenu();
+            }
+        });
+
+        // ===================================
+        // ACCESSIBILITÉ - FOCUS TRAP
+        // ===================================
+        function trapFocus(element) {
+            const focusableElements = element.querySelectorAll(
+                'button, [href], input, select, textarea, [tabindex]:not([tabindex="-1"])'
+            );
+            const firstFocusable = focusableElements[0];
+            const lastFocusable = focusableElements[focusableElements.length - 1];
+
+            element.addEventListener('keydown', function(e) {
+                if (e.key === 'Tab') {
+                    if (e.shiftKey) {
+                        if (document.activeElement === firstFocusable) {
+                            lastFocusable.focus();
+                            e.preventDefault();
+                        }
+                    } else {
+                        if (document.activeElement === lastFocusable) {
+                            firstFocusable.focus();
+                            e.preventDefault();
+                        }
+                    }
+                }
+            });
+        }
+
+        // Appliquer le focus trap au menu
+        trapFocus(menuSidebar);
+
+        // ===================================
+        // SCROLL VERS LE HAUT À L'OUVERTURE
+        // ===================================
+        // S'assurer que chaque page commence en haut
+        const observer = new MutationObserver(function(mutations) {
+            mutations.forEach(function(mutation) {
+                if (mutation.target.classList.contains('active')) {
+                    window.scrollTo(0, 0);
+                    mutation.target.scrollIntoView({ behavior: 'instant', block: 'start' });
+                }
+            });
+        });
+
+        // Observer tous les éléments avec la classe 'page'
+        document.querySelectorAll('.page').forEach(page => {
+            observer.observe(page, {
+                attributes: true,
+                attributeFilter: ['class']
+            });
+        });
+
+        // ===================================
+        // INITIALISATION
+        // ===================================
+        document.addEventListener('DOMContentLoaded', function() {
+            console.log('Recueil de poésie chargé avec succès');
+            
+            // S'assurer que la page de couverture est en haut au chargement
+            window.scrollTo(0, 0);
+            
+            // Désactiver le scroll smooth temporairement pour le chargement initial
+            document.documentElement.style.scrollBehavior = 'auto';
+            setTimeout(() => {
+                document.documentElement.style.scrollBehavior = 'smooth';
+            }, 100);
+        });
+
+        // ===================================
+        // PRÉVENIR LE SCROLL LORS DU CHANGEMENT DE PAGE
+        // ===================================
+        window.addEventListener('beforeunload', function() {
+            window.scrollTo(0, 0);
+        });
+
+        // Force le scroll en haut pour les navigations
+        window.addEventListener('load', function() {
+            setTimeout(() => {
+                window.scrollTo(0, 0);
+            }, 0);
+        });
+    </script>
+</body>
+</html>
